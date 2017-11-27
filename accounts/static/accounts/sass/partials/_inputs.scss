@@ -1,0 +1,26 @@
+@import "../utils/_mixins.scss";
+@import "../utils/variables";
+
+input[type=text] {
+  @extend %input-type;
+
+}
+
+input[type=password] {
+  @extend %input-type;
+}
+
+input[type=submit] {
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    padding: 14px 20px;
+    width: 100%;
+    background-color: $background-input-color;
+    cursor: pointer;
+    color: $white-color;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}

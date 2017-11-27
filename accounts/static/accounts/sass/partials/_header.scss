@@ -1,0 +1,6 @@
+@import "../utils/_mixins.scss";
+
+header {
+  @extend %header-and-footer;
+  top: 0;
+}
