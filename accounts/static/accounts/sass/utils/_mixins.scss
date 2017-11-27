@@ -1,0 +1,13 @@
+@mixin div-main-form ($margin, $border, $border-radius, $background-color, $padding, $width) {
+  margin: $margin;
+  border: $border;
+  border-radius: $border-radius;
+  background-color: $background-color;
+  padding: $padding;
+  width: $width;
+}
+
+@mixin input-type ($padding) {
+  padding: $padding;
+}
+

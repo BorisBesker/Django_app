@@ -1,0 +1,9 @@
+// Importing the place holders in main.scss because of duplication after compiling in main.css
+@import "utils/_placeholders.scss";
+
+// Importing all partial files
+@import "partials/_background";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/forms";
+@import "partials/inputs";
