@@ -1,5 +1,3 @@
-from django.contrib.auth.models import User
-
 from . factories import UserFactory
 
 
@@ -16,6 +14,5 @@ class CreateUserMixin:
 
 
 
-# User.objects.create_user(username='boris', password='123', email='boris@gmail.com')
 
 
