@@ -7,3 +7,7 @@
 @import "partials/footer";
 @import "partials/forms";
 @import "partials/inputs";
+
+// Importing .scss specific to welcome page
+
+@import "pages/welcome";

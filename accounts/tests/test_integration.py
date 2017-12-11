@@ -33,7 +33,7 @@ class LoginViewTest(CreateUserMixin, TestCase):
         self.client.login(username=self.user.username, password=self.password)
         resp = self.client.get(reverse('accounts:login'))
         self.assertEqual(resp.status_code, 302)
-        # self.assertRedirects(resp, '/accounts/welcome/')
+        self.assertRedirects(resp, '/googlemaps/welcome/')
 
     def test_login_view_post_user_logged_in(self):
         """Test that login view logs the User, and redirects him when validation passes after POST request. """
@@ -41,7 +41,7 @@ class LoginViewTest(CreateUserMixin, TestCase):
         user = auth.get_user(self.client)
         self.assertTrue(user.is_authenticated())
         self.assertEqual(resp.status_code, 302)
-        # self.assertRedirects(resp, '/accounts/welcome/')
+        self.assertRedirects(resp, '/googlemaps/welcome/')
 
     def test_login_view_post_invalid_login(self):
         """Test that login view uses the correct template when validation fails. """
@@ -74,9 +74,8 @@ class RegisterViewTest(CreateUserMixin, TestCase):
         """Test that register view redirects the user if logged in, on GET request"""
         self.client.login(username=self.user.username, password=self.password)
         resp = self.client.get(reverse('accounts:register'))
-        print(resp.redirect_chain)
         self.assertEqual(resp.status_code, 302)
-        self.assertRedirects(resp, '/accounts/welcome/')
+        self.assertRedirects(resp, '/googlemaps/welcome/')
 
     def test_register_view_post_user_successful_registration(self):
         """Test that register view registers the User, logs and redirects him when validation passes after POST
@@ -87,6 +86,7 @@ class RegisterViewTest(CreateUserMixin, TestCase):
         user = auth.get_user(self.client)
         self.assertTrue(user.is_authenticated())
         self.assertEqual(resp.status_code, 302)
+        self.assertRedirects(resp, '/googlemaps/welcome/')
 
     def test_register_view_post_user_unsuccessful_registration(self):
         """Test that register view does not register user and uses the correct template when validation fails after POST

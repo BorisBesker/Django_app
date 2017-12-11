@@ -16,7 +16,7 @@ class Login(View):
 
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated():
-            return HttpResponseRedirect(reverse('accounts:welcome'))
+            return HttpResponseRedirect(reverse('google_maps:welcome'))
         return render(request, self.template_name, {'form': self.form_class()})
 
     def post(self, request, *args, **kwargs):
@@ -24,7 +24,7 @@ class Login(View):
         if form.is_valid():
             user = authenticate(username=form.cleaned_data['username'], password=form.cleaned_data['password'])
             login(request, user)
-            return HttpResponseRedirect('ome')
+            return HttpResponseRedirect(reverse('google_maps:welcome'))
 
         return render(request, self.template_name, {'form': form})
 
@@ -36,7 +36,7 @@ class Register(View):
 
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated():
-            return HttpResponseRedirect(reverse('accounts:welcome'))
+            return HttpResponseRedirect(reverse('google_maps:welcome'))
         return render(request, self.template_name, {'form': self.form_class()})
 
     def post(self, request, *args, **kwargs):
@@ -47,7 +47,7 @@ class Register(View):
             user.save()
             user = authenticate(username=form.cleaned_data['username'], password=form.cleaned_data['password'])
             login(request, user)
-            return HttpResponseRedirect(reverse('accounts:welcome'))
+            return HttpResponseRedirect(reverse('google_maps:welcome'))
 
         return render(request, self.template_name, {'form': form})
 
@@ -55,7 +55,7 @@ class Register(View):
 class Welcome(LoginRequiredMixin, TemplateView):
 
     login_url = '/accounts/login/'
-    template_name = 'accounts/welcome.html'
+    template_name = 'google_maps/welcome.html'
 
 
 class Logout(LoginRequiredMixin, View):
