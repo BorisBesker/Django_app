@@ -102,7 +102,7 @@ class LogoutViewTest(CreateUserMixin, TestCase):
 
     def setUp(self):
         """Setup test data for every test method, created new user."""
-        self.create_user(username='Boris', email='boris@gmail.com')
+        self.user = self.create_user(username='Boris', email='boris@gmail.com')
 
     def test_logout_view_url_exists_at_desired_location(self):
         resp = self.client.get('/accounts/logout/')
@@ -117,7 +117,7 @@ class LogoutViewTest(CreateUserMixin, TestCase):
         self.assertRedirects(resp, '/accounts/login/?next=/accounts/logout/')
 
     def test_logout_view_login_successful_redirect(self):
-        self.client.login(username='boris', password='123')
+        self.client.login(username=self.user.username, password=self.password)
         resp = self.client.get(reverse('accounts:logout'))
         self.assertEqual(resp.status_code, 302)
         self.assertRedirects(resp, '/accounts/login/')
