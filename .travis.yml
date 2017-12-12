@@ -5,6 +5,6 @@ install:
   - pip install -r requirements.txt
   - pip install coveralls
 script:
-  - python manage.py test
-  - coverage run --source='.' manage.py test
+  - python manage.py test google_maps
+  - coverage run --source=google_maps manage.py google_maps
 after_success: coveralls
