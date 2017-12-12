@@ -7,4 +7,6 @@ install:
 script:
   - python manage.py test google_maps
   - coverage run --source=django_app manage.py test
+before script:
+  - mysql -e GRANT ALL PRIVILEGES ON test_django_app_db.* TO 'boris'@'localhost';
 after_success: coveralls
