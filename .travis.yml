@@ -6,7 +6,7 @@ install:
   - pip install -r requirements.txt
   - pip install coveralls
 script:
-  - python manage.py test google_maps
+  - python manage.py test
   - coverage run --source=django_app manage.py test
 before script:
   - mysql -e 'create database travis_ci_db;'
