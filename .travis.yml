@@ -7,7 +7,7 @@ install:
   - pip install coveralls
 script:
   - python manage.py test
-  - coverage run --source=django_app manage.py test
+  - coverage run --source='.'  manage.py test
 before script:
   - mysql -e 'create database travis_ci_db;'
 after_success: coveralls
