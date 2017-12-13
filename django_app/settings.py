@@ -77,10 +77,7 @@ WSGI_APPLICATION = 'django_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-if os.getenv('BUILD_ON_TRAVIS', None):
-    SECRET_KEY = "SecretKeyForUseOnTravis"
-    DEBUG = False
-    TEMPLATE_DEBUG = True
+if 'TRAVIS' in os.environ:
 
     DATABASES = {
         'default': {
