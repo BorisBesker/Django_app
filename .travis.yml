@@ -9,6 +9,5 @@ script:
   - python manage.py test google_maps
   - coverage run --source=django_app manage.py test
 before script:
-  - mysql -e 'create database mysite_db;'
-  - mysql -e 'GRANT ALL PRIVILEGES ON test_mysite_db.* TO 'boris'@'localhost';'
+  - mysql -e 'create database travis_ci_db;'
 after_success: coveralls
