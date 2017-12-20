@@ -12,7 +12,6 @@ $(document).ready(function() {
         for (var key of searchParams.keys()) {
             currentParams[key] = searchParams.get(key);
         }
-
         mode = (mode) ? mode : getCurrentMode();
 
         Object.assign(currentParams, options);
@@ -44,6 +43,7 @@ $(document).ready(function() {
     // Event handler for mode change
     $("select").change(function () {
         var search_mode = $( "select option:selected" ).val();
+        console.log(search_mode)
         $("iframe").attr("src", generateSrc(search_mode));
     });
 
@@ -67,5 +67,48 @@ $(document).ready(function() {
         }
         $("iframe").attr("src", generateSrc(null, {q: place}));
     });
+
+    $("#savelocations").click(function(event) {
+
+        event.preventDefault();
+
+        if($("select option:selected").val()==='search'){
+            popupopen('You cannot save a location in search mode, if you want to save a location switch to a place mode');
+        }else if($("#locationTextField").val() === ''){
+            popupopen('Please enter a location to save: ');
+        }else{
+            $.ajax({
+            url: 'http://localhost:7000/googlemaps/location/',
+            method: 'POST',
+            data: {place: $("#locationTextField").val()},
+            dataType: 'json',
+            success: function (data) {
+                console.log(data.place);
+                popupopen('Your location <b>'  + data.place + '</b> and date has been saved, to view the list of saved locations go to <a href="/googlemaps/location">locations list</a> or return searching');
+
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+                alert(xhr.status);
+                alert(thrownError);
+            }
+        })}
+    });
+
+    function popupopen(message) {
+        $('#popup-message').empty();
+        $('#popup-message').append(message);
+        $('[data-popup="popup-1"]').fadeIn(350);
+    }
+
+
+    //----- CLOSE
+    $('[data-popup-close]').on('click', function(e)  {
+        var targeted_popup_class = jQuery(this).attr('data-popup-close');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+        console.log(targeted_popup_class);
+
+        e.preventDefault();
+    });
+
 
 });

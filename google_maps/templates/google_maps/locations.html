@@ -1,0 +1,16 @@
+{% extends "accounts/base.html" %}
+
+{% block content %}
+  <a href="">Back to main page</a>
+
+  <div class ="formcontainer">
+    {% for key, value in locations.items %}
+      <p>Location: <a href="{% url 'google_maps:welcome' %}?place={{ key }}">{{ key }}</a></p>
+      <ul>
+      {% for date in value %}
+        <li>Date visited: {{ date }}</li>
+      {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+{% endblock %}
