@@ -18,8 +18,6 @@ class Welcome(LoginRequiredMixin, View):
         return render(request, self.template_name, {'place': request.GET.get('place')})
 
 
-
-
 class ListLocations(LoginRequiredMixin, View):
 
     login_url = '/accounts/login/'
