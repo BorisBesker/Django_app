@@ -35,17 +35,7 @@ class ListLocations(LoginRequiredMixin, View):
         return JsonResponse({'place': current_location.name})
 
     def get(self, request, *args, **kwargs):
-        dict1 = {'Split': [1, 2, 4], 'Zagreb': [1, 4, 6]}
+        dates = DateVisited.objects.filter(user=request.user).prefetch_related('location').order_by('-date_visited')
+        return render(request, self.template_name, {'dates': dates})
 
-        return render(request, self.template_name, {'locations': dict1})
-
-        #{'locations': dict1, 'place': 'Split'}
-    #def get(self, request, *args, **kwargs):
-    #    list1 = []
-    #    dates = DateVisited.objects.filter(user=request.user).order_by('-location__name')
-    #    for date in dates:
-
-    #        list1.append(str(date.location) + '-' + str(date.date_visited) + '        ')
-
-    #    return HttpResponse(list1)
 

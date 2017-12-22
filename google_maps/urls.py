@@ -7,4 +7,3 @@ urlpatterns = [
     url(r'^welcome/$', Welcome.as_view(), name='welcome'),
     url(r'^location/$', ListLocations.as_view(), name='locations_list')
 ]
-

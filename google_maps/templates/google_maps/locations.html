@@ -1,16 +1,15 @@
 {% extends "accounts/base.html" %}
 
 {% block content %}
-  <a href="">Back to main page</a>
-
+  <p id="logout_link"><a href="{% url 'accounts:logout' %}">LOGOUT</a><p>
+  <p class="nav-button"><a  href="{% url 'google_maps:welcome' %}">Back to main page</a><p>
   <div class ="formcontainer">
-    {% for key, value in locations.items %}
-      <p>Location: <a href="{% url 'google_maps:welcome' %}?place={{ key }}">{{ key }}</a></p>
-      <ul>
-      {% for date in value %}
-        <li>Date visited: {{ date }}</li>
-      {% endfor %}
-      </ul>
+  <h2>Saved locations for user {{ user.username }}</h2>
+  <ul>
+    {% for date in dates %}
+      <li><b> Location: </b><a href="{% url 'google_maps:welcome' %}?place={{ date.location }}">{{ date.location }}</a><br><b> Date visited: </b>{{ date.date_visited }}</li>
+      <br>
     {% endfor %}
+  </ul>
   </div>
 {% endblock %}
