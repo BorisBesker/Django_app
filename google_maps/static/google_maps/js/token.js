@@ -1,3 +1,7 @@
+/* Function responsible for sending X-CSRFToken.
+On each XMLHttpRequest, set a custom header to
+the value of the CSRF token. */
+
 $(document).ajaxSend(function(event, xhr, settings) {
   function getCookie(name) {
     var cookieValue = null;

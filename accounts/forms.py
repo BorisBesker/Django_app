@@ -43,4 +43,3 @@ class RegisterForm(forms.ModelForm):
         if user_qs.exists():
             raise forms.ValidationError('This username already exists')
         return self.cleaned_data['username']
-

@@ -1,6 +1,6 @@
-from django.test import TestCase
-from django.core.urlresolvers import reverse
 from django.contrib import auth
+from django.core.urlresolvers import reverse
+from django.test import TestCase
 
 from . mixins import CreateUserMixin
 
@@ -121,4 +121,3 @@ class LogoutViewTest(CreateUserMixin, TestCase):
         resp = self.client.get(reverse('accounts:logout'))
         self.assertEqual(resp.status_code, 302)
         self.assertRedirects(resp, '/accounts/login/')
-

@@ -1,4 +1,4 @@
-// Autocomplete function for google search
+// Autocomplete function (Google API) for location search
 
 function init() {
      var input = document.getElementById('locationTextField');

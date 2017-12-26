@@ -84,13 +84,3 @@ class RegisterFormTest(CreateUserMixin, TestCase):
         self.form_data['email'] = 'boris@gmai1.com'
         form = RegisterForm(data=self.form_data)
         self.assertTrue(form.is_valid())
-
-
-
-
-
-
-
-
-
-

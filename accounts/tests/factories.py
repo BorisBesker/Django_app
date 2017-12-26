@@ -1,6 +1,5 @@
-import factory
-
 from django.contrib.auth.models import User
+import factory
 
 
 class UserFactory(factory.django.DjangoModelFactory):
@@ -8,7 +7,3 @@ class UserFactory(factory.django.DjangoModelFactory):
         model = User
 
     password = factory.PostGenerationMethodCall('set_password', 'defaultpassword')
-
-
-
-

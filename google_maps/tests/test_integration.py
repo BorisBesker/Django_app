@@ -1,6 +1,6 @@
-from django.test import TestCase
 from django.core.urlresolvers import reverse
 from django.contrib import auth
+from django.test import TestCase
 
 from accounts.tests.mixins import CreateUserMixin
 
@@ -33,9 +33,3 @@ class WelcomeViewTest(CreateUserMixin, TestCase):
         resp = self.client.get(reverse('google_maps:welcome'))
         self.assertEquals(resp.status_code, 200)
         self.assertTemplateUsed((resp, 'google_maps/welcome.html'))
-
-
-
-
-
-

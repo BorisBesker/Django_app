@@ -8,4 +8,3 @@ urlpatterns = [
     url(r'^logout/$', views.Logout.as_view(), name="logout"),
     url(r'^register/$', views.Register.as_view(), name="register"),
 ]
-

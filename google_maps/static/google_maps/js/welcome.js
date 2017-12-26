@@ -2,8 +2,7 @@ $(document).ready(function() {
 
     //Generates the src of iFrame based on users input
     function generateSrc(mode, options) {
-        var currentParams = {};
-        var params = {};
+        var currentParams, params = {};
         var src_iframe = $("iframe").attr("src");
         var getQueryString = src_iframe.match(/&(.+)/); // Gets querystring after APIkey
         var searchParams = new URLSearchParams(getQueryString[1]);
@@ -33,7 +32,7 @@ $(document).ready(function() {
         return mode;
     }
 
-    // Generates the ebeded code on textarea
+    // Generates the iframe code on textarea
     $("#genButton").click(function() {
         var text = $("iframe")[0].outerHTML;
         $('textarea').val(text);
@@ -43,7 +42,6 @@ $(document).ready(function() {
     // Event handler for mode change
     $("select").change(function () {
         var search_mode = $( "select option:selected" ).val();
-        console.log(search_mode)
         $("iframe").attr("src", generateSrc(search_mode));
     });
 
@@ -54,12 +52,14 @@ $(document).ready(function() {
         document.execCommand('copy');
     });
 
+    // Event handler for when pressing Enter button
     $("#locationTextField").keydown(function(event) {
         if (event.keyCode == 13) {
             $('#searchButton').click();
         }
     });
 
+    // Event handler for pressing the search button
     $("#searchButton").click(function() {
         var place = $("#locationTextField").val();
         if(place === '') {
@@ -68,6 +68,7 @@ $(document).ready(function() {
         $("iframe").attr("src", generateSrc(null, {q: place}));
     });
 
+    // Event handler for saving a location
     $("#savelocations").click(function(event) {
 
         event.preventDefault();
@@ -83,7 +84,6 @@ $(document).ready(function() {
             data: {place: $("#locationTextField").val()},
             dataType: 'json',
             success: function (data) {
-                console.log(data.place);
                 popupopen('Your location <b>'  + data.place + '</b> and date has been saved, to view the list of saved locations go to <a href="/googlemaps/location">locations list</a> or return searching');
 
             },
@@ -94,18 +94,17 @@ $(document).ready(function() {
         })}
     });
 
+    // Function for opening a pupup
     function popupopen(message) {
         $('#popup-message').empty();
         $('#popup-message').append(message);
         $('[data-popup="popup-1"]').fadeIn(350);
     }
 
-
-    //----- CLOSE
+    // Function for closing a pupup
     $('[data-popup-close]').on('click', function(e)  {
         var targeted_popup_class = jQuery(this).attr('data-popup-close');
         $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
-        console.log(targeted_popup_class);
 
         e.preventDefault();
     });
