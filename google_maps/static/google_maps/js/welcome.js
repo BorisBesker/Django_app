@@ -59,7 +59,7 @@ $(document).ready(function() {
         }
     });
 
-    // Event handler for pressing the search button
+    // Event handler for clicking the search button
     $("#searchButton").click(function() {
         var place = $("#locationTextField").val();
         if(place === '') {

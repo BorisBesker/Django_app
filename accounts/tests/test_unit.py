@@ -18,7 +18,8 @@ class UserFormTest(CreateUserMixin, TestCase):
         self.assertIsNone(self.form.fields['username'].label)
 
     def test_user_form_password_field_label(self):
-        """Form validation to check if correct label is rendered, also test whether the label value is None, because
+        """  
+        Form validation to check if correct label is rendered, also test whether the label value is None, because
         even though Django will render the correct label it returns None if the value is not explicitly set.
         """
         self.assertIsNone(self.form.fields['password'].label)

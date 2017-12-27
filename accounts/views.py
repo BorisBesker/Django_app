@@ -15,11 +15,29 @@ class Login(View):
     template_name = 'accounts/login.html'
 
     def get(self, request, *args, **kwargs):
+        """Handles the GET Http request
+
+        If user is authenticated performs redirection, if not authenticated returns the associated template
+
+        :param request:
+        :param args:
+        :param kwargs:
+        :return:
+        """
         if request.user.is_authenticated():
             return HttpResponseRedirect(reverse('google_maps:welcome'))
         return render(request, self.template_name, {'form': self.form_class()})
 
     def post(self, request, *args, **kwargs):
+        """Handles the POST Http request
+
+        If form validation has passed loges the user, else returns the template with form errors
+
+        :param request:
+        :param args:
+        :param kwargs:
+        :return:
+        """
         form = self.form_class(request.POST)
         if form.is_valid():
             user = authenticate(username=form.cleaned_data['username'], password=form.cleaned_data['password'])
@@ -35,11 +53,29 @@ class Register(View):
     template_name = 'accounts/registration.html'
 
     def get(self, request, *args, **kwargs):
+        """Handles the GET Http request
+
+        If user is authenticated performs redirection, if not authenticated returns the associated template
+
+        :param request:
+        :param args:
+        :param kwargs:
+        :return:
+        """
         if request.user.is_authenticated():
             return HttpResponseRedirect(reverse('google_maps:welcome'))
         return render(request, self.template_name, {'form': self.form_class()})
 
     def post(self, request, *args, **kwargs):
+        """Handles the POST Http request
+
+        If form validation has passed registers the user then loges the user, else returns the template with form errors
+
+        :param request:
+        :param args:
+        :param kwargs:
+        :return:
+        """
         form = self.form_class(request.POST)
         if form.is_valid():
             user = form.save(commit=False)
@@ -63,5 +99,14 @@ class Logout(LoginRequiredMixin, View):
     login_url = '/accounts/login/'
 
     def get(self, request, *args, **kwargs):
+        """Handles the GET Http request
+
+        If user is not logged in redirects to 'login_url', if authenticated loges out the user
+
+        :param request:
+        :param args:
+        :param kwargs:
+        :return:
+        """
         logout(request)
         return HttpResponseRedirect(reverse('accounts:login'))

@@ -9,16 +9,20 @@ User = auth.get_user_model()
 
 
 class LoginViewTest(CreateUserMixin, TestCase):
-
+    """Integration tests for LoginView, every method of LoginViewTest except setUp is a test case for different
+    functionality
+    """
     def setUp(self):
-        """Setup test data for every test method, created new user."""
+        """Setup test data for every test method, creates new user."""
         self.user = self.create_user(username='Boris', email='boris@gmail.com')
 
     def test_login_view_url_exists_at_desired_location(self):
+        """Tests that login view exists at desired location"""
         resp = self.client.get('/accounts/login/')
         self.assertNotEquals(resp.status_code, 404)
 
     def test_login_view_url_accessible_by_name(self):
+        """Tests that login view is accessible by name"""
         resp = self.client.get(reverse('accounts:login'))
         self.assertNotEqual(resp.status_code, 404)
 
@@ -29,7 +33,7 @@ class LoginViewTest(CreateUserMixin, TestCase):
         self.assertTemplateUsed((resp, 'accounts/login.html'))
 
     def test_login_view_get_successful_redirect_logged_in(self):
-        """Test that login view  redirects the user if logged in, on GET request"""
+        """Test that login view redirects the user if logged in, on GET request"""
         self.client.login(username=self.user.username, password=self.password)
         resp = self.client.get(reverse('accounts:login'))
         self.assertEqual(resp.status_code, 302)
@@ -51,16 +55,20 @@ class LoginViewTest(CreateUserMixin, TestCase):
 
 
 class RegisterViewTest(CreateUserMixin, TestCase):
-
+    """Integration tests for RegisterView, every method of LoginViewTest except setUp is a test case for different
+    functionality
+    """
     def setUp(self):
-        """Setup test data for every test method, created new user."""
+        """Setup test data for every test method, creates new user."""
         self.user = self.create_user(username='Boris', email='boris@gmail.com')
 
     def test_register_view_url_exists_at_desired_location(self):
+        """Tests that login view exists at desired location"""
         resp = self.client.get('/accounts/register/')
         self.assertNotEquals(resp.status_code, 404)
 
     def test_register_view_url_accessible_by_name(self):
+        """Tests that login view is accessible by name"""
         resp = self.client.get(reverse('accounts:register'))
         self.assertNotEqual(resp.status_code, 404)
 
@@ -99,12 +107,15 @@ class RegisterViewTest(CreateUserMixin, TestCase):
 
 
 class LogoutViewTest(CreateUserMixin, TestCase):
-
+    """Integration tests for RegisterView, every method of LoginViewTest except setUp is a test case for different
+      functionality
+      """
     def setUp(self):
-        """Setup test data for every test method, created new user."""
+        """Setup test data for every test method, creates new user."""
         self.user = self.create_user(username='Boris', email='boris@gmail.com')
 
     def test_logout_view_url_exists_at_desired_location(self):
+
         resp = self.client.get('/accounts/logout/')
         self.assertNotEquals(resp.status_code, 404)
 
