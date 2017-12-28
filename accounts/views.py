@@ -101,7 +101,7 @@ class Logout(LoginRequiredMixin, View):
     def get(self, request, *args, **kwargs):
         """Handles the GET Http request
 
-        If user is not logged in redirects to 'login_url', if authenticated loges out the user
+        If user is not logged in redirects to 'login_url', if authenticated loges out the user in.
 
         :param request:
         :param args:
