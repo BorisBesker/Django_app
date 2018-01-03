@@ -44,11 +44,10 @@ class ListLocations(LoginRequiredMixin, View):
         """
         try:
             current_location, created = Location.objects.get_or_create(name=request.POST['place'])
-
         except OperationalError:
             return HttpResponseBadRequest()
-        d1 = DateVisited(user=request.user, location=current_location)
-        d1.save()
+        date_visited_record = DateVisited(user=request.user, location=current_location)
+        date_visited_record.save()
         return JsonResponse({'place': current_location.name})
 
     def get(self, request, *args, **kwargs):

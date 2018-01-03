@@ -7,7 +7,7 @@ from . mixins import CreateUserMixin
 class UserFormTest(CreateUserMixin, TestCase):
 
     def setUp(self):
-        """Setup test data for every test method, created new user and instantiated new UserForm"""
+        """Setup test data for every test method, creates new user and instantiated new UserForm"""
         self.form = UserForm()
         self.user = self.create_user(username='Mate', email='boris@gmail.com')
 
@@ -37,7 +37,7 @@ class UserFormTest(CreateUserMixin, TestCase):
 class RegisterFormTest(CreateUserMixin, TestCase):
 
     def setUp(self):
-        """Setup test data for every test method, created new user and instantiated new RegisterForm. Initialized keys
+        """Setup test data for every test method, creates new user and instantiated new RegisterForm. Initialized keys
         with values in form_data dictionary.
         """
         self.form = RegisterForm()

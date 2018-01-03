@@ -9,9 +9,7 @@ User = auth.get_user_model()
 
 
 class LoginViewTest(CreateUserMixin, TestCase):
-    """Integration tests for LoginView, every method of LoginViewTest except setUp is a test case for different
-    functionality
-    """
+
     def setUp(self):
         """Setup test data for every test method, creates new user."""
         self.user = self.create_user(username='Boris', email='boris@gmail.com')
@@ -55,9 +53,7 @@ class LoginViewTest(CreateUserMixin, TestCase):
 
 
 class RegisterViewTest(CreateUserMixin, TestCase):
-    """Integration tests for RegisterView, every method of LoginViewTest except setUp is a test case for different
-    functionality
-    """
+
     def setUp(self):
         """Setup test data for every test method, creates new user."""
         self.user = self.create_user(username='Boris', email='boris@gmail.com')
