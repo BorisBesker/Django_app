@@ -13,16 +13,16 @@ class LocationModelTest(TestCase):
         """Test location model name field has correct label."""
         location = Location.objects.get(name='Split')
         field_label = location._meta.get_field('name').verbose_name
-        self.assertEquals(field_label, 'name')
+        self.assertEqual(field_label, 'name')
 
     def test_location_model_date_label(self):
         """Test location model date field has correct label """
         location = Location.objects.get(name='Split')
         field_label = location._meta.get_field('dates').verbose_name
-        self.assertEquals(field_label, 'dates')
+        self.assertEqual(field_label, 'dates')
 
-    def test_location_model_name_max_length(self):
+    def test_location_model_name_field_max_length(self):
         """Test location model name field has correct max length."""
         location = Location.objects.get(name='Split')
         max_length = location._meta.get_field('name').max_length
-        self.assertEquals(max_length, 128)
+        self.assertEqual(max_length, 128)
