@@ -12,14 +12,16 @@ class UserFormTest(CreateUserMixin, TestCase):
         self.user = self.create_user(username='Mate', email='boris@gmail.com')
 
     def test_user_form_user_field_label(self):
-        """Test UserForm check if correct label is rendered, also test whether the label value is None, because
-        even though Django will render the correct label it returns None if the value is not explicitly set.
+        """Test UserForm check if correct label is rendered, also test whether the label value is
+        None, because even though Django will render the correct label it returns None if the value
+        is not explicitly set.
         """
         self.assertIsNone(self.form.fields['username'].label)
 
     def test_user_form_password_field_label(self):
-        """Test UserForm to check if correct label is rendered, also test whether the label value is None, because
-        even though Django will render the correct label it returns None if the value is not explicitly set.
+        """Test UserForm to check if correct label is rendered, also test whether the label value is
+        None, because even though Django will render the correct label it returns None if the value
+        is not explicitly set.
         """
         self.assertIsNone(self.form.fields['password'].label)
 
@@ -37,8 +39,8 @@ class UserFormTest(CreateUserMixin, TestCase):
 class RegisterFormTest(CreateUserMixin, TestCase):
 
     def setUp(self):
-        """Setup test data for every test method, creates new user and instantiated new RegisterForm. Initialized keys
-        with values in form_data dictionary.
+        """Setup test data for every test method, creates new user and instantiated new
+        RegisterForm. Initialized keys with values in form_data dictionary.
         """
         self.form = RegisterForm()
         self.user = self.create_user(username='Boris', email='boris@gmail.com')
@@ -54,8 +56,9 @@ class RegisterFormTest(CreateUserMixin, TestCase):
         self.assertTrue(self.form.fields['username'].label == 'Username')
 
     def test_registration_form_password_field_label(self):
-        """Test RegisterForm to check if correct label is rendered, also test whether the label value is None, because
-        even though Django will render the correct label it returns None if the value is not explicitly set.
+        """Test RegisterForm to check if correct label is rendered, also test whether the label
+        value is None, because even though Django will render the correct label it returns None if
+        the value is not explicitly set.
         """
         self.assertIsNone(self.form.fields['password'].label)
 

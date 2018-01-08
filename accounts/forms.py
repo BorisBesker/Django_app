@@ -13,13 +13,15 @@ class UserForm(forms.Form):
     def clean(self, *args, **kwargs):
         """Performs validation for UserForm
 
-        If the user has entered the wrong credentials or has inactive account ValidationError is raised.
+        If the user has entered the wrong credentials or has inactive account ValidationError is
+        raised.
 
         :param args:
         :param kwargs:
         :return:
         """
-        user = authenticate(username=self.cleaned_data['username'], password=self.cleaned_data['password'])
+        user = authenticate(username=self.cleaned_data['username'],
+                            password=self.cleaned_data['password'])
         if not user:
             raise forms.ValidationError('Invalid credentials')
         elif not user.is_active:
@@ -49,13 +51,11 @@ class RegisterForm(forms.ModelForm):
             raise forms.ValidationError('Passwords must match')
         return super(RegisterForm, self).clean(*args, **kwargs)
 
-    def clean_email(self, *args, **kwargs):
+    def clean_email(self):
         """Performs validation on email field of RegisterForm
 
         If email already exists(associated with different user ValidationError is raised.
 
-        :param args:
-        :param kwargs:
         :return:
         """
         email_qs = User.objects.filter(email=self.cleaned_data['email'])
@@ -63,13 +63,11 @@ class RegisterForm(forms.ModelForm):
             raise forms.ValidationError('This email has already been registered')
         return self.cleaned_data['email']
 
-    def clean_username(self, *args, **kwargs):
+    def clean_username(self):
         """Performs validation on username field of RegisterForm
 
         If username already exists ValidationError is raised
 
-        :param args:
-        :param kwargs:
         :return:
         """
         user_qs = User.objects.filter(username=self.cleaned_data['username'])
