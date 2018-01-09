@@ -15,12 +15,12 @@ class LoginViewTest(CreateUserMixin, TestCase):
         self.user = self.create_user(username='Boris', email='boris@gmail.com')
 
     def test_login_view_url_exists(self):
-        """Tests that login view exists at desired location"""
+        """Tests that login url exists at desired location"""
         resp = self.client.get('/accounts/login/')
         self.assertNotEqual(resp.status_code, 404)
 
     def test_login_view_url_access(self):
-        """Tests that login view is accessible by name"""
+        """Tests that login url is accessible by name"""
         resp = self.client.get(reverse('accounts:login'))
         self.assertNotEqual(resp.status_code, 404)
 
@@ -65,12 +65,12 @@ class RegisterViewTest(CreateUserMixin, TestCase):
         self.user = self.create_user(username='Boris', email='boris@gmail.com')
 
     def test_register_view_exists(self):
-        """Tests that login view exists at desired location"""
+        """Tests that login url exists at desired location"""
         resp = self.client.get('/accounts/register/')
         self.assertNotEqual(resp.status_code, 404)
 
     def test_register_view_access(self):
-        """Tests that login view is accessible by name"""
+        """Tests that login url is accessible by name"""
         resp = self.client.get(reverse('accounts:register'))
         self.assertNotEqual(resp.status_code, 404)
 
@@ -124,12 +124,12 @@ class LogoutViewTest(CreateUserMixin, TestCase):
         self.user = self.create_user(username='Boris', email='boris@gmail.com')
 
     def test_logout_view_exists(self):
-        """Tests that logout view exists at desired location"""
+        """Tests that logout url exists at desired location"""
         resp = self.client.get('/accounts/logout/')
         self.assertNotEqual(resp.status_code, 404)
 
     def test_logout_view_access(self):
-        """Tests that logout view is accessible by name"""
+        """Tests that logout url is accessible by name"""
         resp = self.client.get(reverse('accounts:logout'))
         self.assertNotEqual(resp.status_code, 404)
 
