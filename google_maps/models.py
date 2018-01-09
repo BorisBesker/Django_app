@@ -1,5 +1,4 @@
-from datetime import datetime
-
+from django.utils import timezone
 from django.contrib.auth.models import User
 from django.db import models
 
@@ -15,4 +14,4 @@ class Location(models.Model):
 class DateVisited(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     location = models.ForeignKey(Location, on_delete=models.CASCADE)
-    date_visited = models.DateTimeField(default=datetime.now, blank=True)
+    date_visited = models.DateTimeField(default=timezone.now, blank=True)

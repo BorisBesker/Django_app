@@ -5,9 +5,6 @@ from accounts.tests.mixins import CreateUserMixin
 from google_maps.models import DateVisited
 
 
-# User = auth.get_user_model()
-
-
 class WelcomeViewTest(CreateUserMixin, TestCase):
 
     def setUp(self):
@@ -29,7 +26,7 @@ class WelcomeViewTest(CreateUserMixin, TestCase):
         resp = self.client.get(reverse('google_maps:welcome'))
         self.assertRedirects(resp, '/accounts/login/?next=/googlemaps/welcome/')
 
-    def test_welcome_view_uses_correct_template(self):
+    def test_welcome_view_corr_temp(self):
         """Test that Welcome view uses the correct template when user is logged in."""
         self.client.login(username=self.user.username, password=self.password)
         resp = self.client.get(reverse('google_maps:welcome'))
@@ -53,19 +50,19 @@ class ListLocationsView(CreateUserMixin, TestCase):
         resp = self.client.get(reverse('google_maps:locations_list'))
         self.assertNotEqual(resp.status_code, 404)
 
-    def test_locations_view_redirect_if_not_logged_in(self):
+    def test_locations_view_redirect(self):
         """Test that list locations view redirects user to login page if not logged in."""
         resp = self.client.get(reverse('google_maps:locations_list'))
         self.assertRedirects(resp, '/accounts/login/?next=/googlemaps/location/')
 
-    def test_locations_view_uses_correct_template_when_logged_in(self):
+    def test_locations_view_corr_temp(self):
         """Test that list locations view uses the correct template when user is logged in."""
         self.client.login(username=self.user.username, password=self.password)
         resp = self.client.get(reverse('google_maps:locations_list'))
         self.assertEqual(resp.status_code, 200)
         self.assertTemplateUsed((resp, 'google_maps/locations.html'))
 
-    def test_locations_view_post_successful_valid_data(self):
+    def test_locations_view_post_vd(self):
         """Test that list locations view, handles the post request successfully, saves DateVisited
         record and returns the saved location."""
         location = {'place': 'Split'}
@@ -75,7 +72,7 @@ class ListLocationsView(CreateUserMixin, TestCase):
         self.assertTrue(DateVisited.objects.get(location__name=location['place']))
         self.assertJSONEqual(str(resp.content, encoding='utf8'), location)
 
-    def test_locations_view_post_successful_invalid_data(self):
+    def test_locations_view_post_id(self):
         """Test that list locations view, handles the  post request with invalid data successfully
         and raises 400 error."""
         location = {'place': '指事字'}

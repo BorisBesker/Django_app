@@ -11,14 +11,14 @@ class UserFormTest(CreateUserMixin, TestCase):
         self.form = UserForm()
         self.user = self.create_user(username='Mate', email='boris@gmail.com')
 
-    def test_user_form_user_field_label(self):
+    def test_user_form_user_label(self):
         """Test UserForm check if correct label is rendered, also test whether the label value is
         None, because even though Django will render the correct label it returns None if the value
         is not explicitly set.
         """
         self.assertIsNone(self.form.fields['username'].label)
 
-    def test_user_form_password_field_label(self):
+    def test_user_form_password_label(self):
         """Test UserForm to check if correct label is rendered, also test whether the label value is
         None, because even though Django will render the correct label it returns None if the value
         is not explicitly set.
@@ -51,33 +51,33 @@ class RegisterFormTest(CreateUserMixin, TestCase):
             'email': self.user.email
         }
 
-    def test_registration_form_user_field_label(self):
-        """Test RegisterForm if correct label is rendered. """
+    def test_registration_form_u_label(self):
+        """Test RegisterForm if correct user label is rendered. """
         self.assertTrue(self.form.fields['username'].label == 'Username')
 
-    def test_registration_form_password_field_label(self):
-        """Test RegisterForm to check if correct label is rendered, also test whether the label
+    def test_registration_form_p_label(self):
+        """Test RegisterForm to check if correct password label is rendered, also test whether the
         value is None, because even though Django will render the correct label it returns None if
         the value is not explicitly set.
         """
         self.assertIsNone(self.form.fields['password'].label)
 
-    def test_registration_form_confirm_password_field_label(self):
-        """Test RegisterForm to check if correct label is rendered. """
+    def test_registration_form_c_p_l(self):
+        """Test RegisterForm to check if correct password label is rendered. """
         self.assertTrue(self.form.fields['password1'].label == 'Confirm password')
 
-    def test_registration_form_is_invalid_passwords_not_match(self):
+    def test_registration_form_p_no_match(self):
         """Test RegisterForm validation fails when user enters passwords that are not the same."""
         self.form_data['password1'] = 12345
         form = RegisterForm(data=self.form_data)
         self.assertFalse(form.is_valid())
 
-    def test_registration_form_is_invalid_mail_already_exists(self):
+    def test_registration_form_m_ex(self):
         """Test RegisterForm validation fails when email already exists."""
         form = RegisterForm(data=self.form_data)
         self.assertFalse(form.is_valid())
 
-    def test_registration_form_is_invalid_user_does_already_exist(self):
+    def test_registration_form_u_exists(self):
         """Test RegisterForm validation fails when user already exists."""
         form = RegisterForm(data=self.form_data)
         self.assertFalse(form.is_valid())

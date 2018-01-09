@@ -21,7 +21,7 @@ class LocationModelTest(TestCase):
         field_label = location._meta.get_field('dates').verbose_name
         self.assertEqual(field_label, 'dates')
 
-    def test_location_model_name_field_max_length(self):
+    def test_location_model_name_f_ml(self):
         """Test location model name field has correct max length."""
         location = Location.objects.get(name='Split')
         max_length = location._meta.get_field('name').max_length

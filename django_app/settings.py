@@ -88,6 +88,7 @@ if 'TRAVIS' in os.environ:
             'HOST': '127.0.0.1',
         }
     }
+
 else:
     DATABASES = {
         'default': {
