@@ -27,6 +27,7 @@ urlpatterns = [
     url(r'^googlemaps/', include('google_maps.urls')),
 ]
 
+# It runs the django debug toolbar if DEBUG is set to true
 if settings.DEBUG:
     import debug_toolbar
     urlpatterns = [

@@ -12,12 +12,12 @@ class WelcomeViewTest(CreateUserMixin, TestCase):
         self.user = self.create_user(username='Boris', email='boris@gmail.com')
 
     def test_welcome_view_url_exists(self):
-        """Tests that login view exists at desired location."""
+        """Tests that login url exists at desired location."""
         resp = self.client.get('/googlemaps/welcome/')
         self.assertNotEqual(resp.status_code, 404)
 
     def test_welcome_view_url_access(self):
-        """Tests that login view is accessible by name."""
+        """Tests that login url is accessible by name."""
         resp = self.client.get(reverse('google_maps:welcome'))
         self.assertNotEqual(resp.status_code, 404)
 
@@ -41,12 +41,12 @@ class ListLocationsView(CreateUserMixin, TestCase):
         self.user = self.create_user(username='Boris', email='boris@gmail.com')
 
     def test_locations_view_url_exists(self):
-        """Tests that list locations view exists at desired location."""
+        """Tests that list locations url exists at desired location."""
         resp = self.client.get('/googlemaps/location/')
         self.assertNotEqual(resp.status_code, 404)
 
     def test_locations_view_url_access(self):
-        """Tests that list locations view is accessible by name."""
+        """Tests that list locations url is accessible by name."""
         resp = self.client.get(reverse('google_maps:locations_list'))
         self.assertNotEqual(resp.status_code, 404)
 
