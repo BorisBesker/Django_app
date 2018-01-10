@@ -21,7 +21,7 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     # Redirects the user to the accounts login url when enters the site, e.g localhost8000
-    url(r'^$', RedirectView.as_view(url='/')),
+    url(r'^$', RedirectView.as_view(url='/accounts/login')),
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include('accounts.urls')),
     url(r'^googlemaps/', include('google_maps.urls')),
