@@ -1,4 +1,6 @@
 Django_app
+########################################
+
 
 How to Contribute
 Check for open issues or open a fresh issue to start a discussion around a feature idea or a bug. There is a Contributor Friendly tag for issues that should be ideal for people who are not very familiar with the codebase yet.
