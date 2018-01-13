@@ -1,5 +1,5 @@
- Document Title
-================
+
+Document Title
 
 Chapter 1 Title
 ===============
