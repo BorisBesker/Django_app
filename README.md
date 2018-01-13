@@ -12,7 +12,7 @@ Django_app is a simple django application created for learning purposes. It feat
 [1]: http://slashdot.org
 
 
-<a name= "Features></a>"Features
+<a name="team-members"></a>"Features
 ---------
 
 * For Django 1.11
