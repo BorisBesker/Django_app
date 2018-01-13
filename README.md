@@ -13,6 +13,7 @@ Features
 * Django debug toolbar
 * Login/registration
 * Google maps embed API
+* Google place autocomplete
 * Location and direction search
 * Saving and revisiting most recent locations
 * SASS 
