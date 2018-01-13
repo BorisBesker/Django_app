@@ -18,7 +18,7 @@ Django_app is a simple django application created for learning purposes. It feat
 * For Django 1.11
 * Works with Python 2.7 or 3.5
 * Django debug toolbar
-* Login/registration
+* User Login/Registration
 * Google maps embed API
 * Google place autocomplete
 * Location and direction search
