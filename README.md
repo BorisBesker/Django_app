@@ -8,6 +8,7 @@ Features
 
 * For Django 1.11
 * Works with Python 2.7 or 3.5
+* Django debug toolbar
 * Login/registration
 * Google maps embed API
 * Location and direction search
@@ -15,7 +16,7 @@ Features
 * SASS 
 * Integration with travis CI
 * Integration with Coveralls
-* Code covrage up to 95 %
+* Code coverage up to 95 %
 * Integration and unit tests
 * Code quality up to 9/10 using Django-pylint
 
