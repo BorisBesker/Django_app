@@ -9,7 +9,7 @@ Django_app is a simple django application created for learning purposes. It feat
 [arbitrary case-insensitive reference text]: https://www.mozilla.org
 
 [I'm an inline-style link with title](https://www.google.com "Google's Homepage")
-[Features] (#team-members)
+[Features](#team-members)
 
 
 <a name="team-members">Features</a>
