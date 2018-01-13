@@ -1,7 +1,7 @@
 
 django_app
 ===============
-Django_app is a simple django application created for learning purposes. It enables the user to save and revisit a location on google maps embedded api. 
+Django_app is a simple django application created for learning purposes. It features the user to search/save a location/direction on Google Maps Embeded API.
 
 Features
 ---------
