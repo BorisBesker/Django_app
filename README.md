@@ -1,9 +1,9 @@
-Django_app
+HTTPie: a CLI, cURL-like tool for humans
 ########################################
 
-
-How to Contribute
-Check for open issues or open a fresh issue to start a discussion around a feature idea or a bug. There is a Contributor Friendly tag for issues that should be ideal for people who are not very familiar with the codebase yet.
-Fork the repository on GitHub to start making your changes to the master branch (or branch off of it).
-Write a test which shows that the bug was fixed or that the feature works as expected.
-Send a pull request and bug the maintainer until it gets merged and published. :) Make sure to add yourself to AUTHORS.
+HTTPie (pronounced *aitch-tee-tee-pie*) is a command line HTTP client.
+Its goal is to make CLI interaction with web services as human-friendly
+as possible. It provides a simple ``http`` command that allows for sending
+arbitrary HTTP requests using a simple and natural syntax, and displays
+colorized output. HTTPie can be used for testing, debugging, and
+generally interacting with HTTP servers.
