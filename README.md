@@ -1,9 +1,14 @@
-HTTPie: a CLI, cURL-like tool for humans
-########################################
+Chapter 1 Title
+===============
 
-HTTPie (pronounced *aitch-tee-tee-pie*) is a command line HTTP client.
-Its goal is to make CLI interaction with web services as human-friendly
-as possible. It provides a simple ``http`` command that allows for sending
-arbitrary HTTP requests using a simple and natural syntax, and displays
-colorized output. HTTPie can be used for testing, debugging, and
-generally interacting with HTTP servers.
+Section 1.1 Title
+-----------------
+
+Subsection 1.1.1 Title
+~~~~~~~~~~~~~~~~~~~~~~
+
+Section 1.2 Title
+-----------------
+
+Chapter 2 Title
+===============
