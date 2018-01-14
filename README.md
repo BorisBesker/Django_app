@@ -5,10 +5,8 @@ Django_app is a simple django application created for learning purposes. It feat
 
 <img width="1274" alt="gm" src="https://user-images.githubusercontent.com/26566198/34909233-76444f3a-f89d-11e7-8181-0b880e31bbe3.png">
 
-[You can use numbers for reference-style link definitions][1]
-[arbitrary case-insensitive reference text]: https://www.mozilla.org
+Contents
 
-[I'm an inline-style link with title](https://www.google.com "Google's Homepage")
 <a name="features-content">[Features](#features)</a>
 
 
