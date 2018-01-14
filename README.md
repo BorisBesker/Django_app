@@ -40,7 +40,6 @@ Section 1.2 Title
 -----------------
 
 ```python
-
 else:
     DATABASES = {
         'default': {
