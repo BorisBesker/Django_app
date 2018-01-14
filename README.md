@@ -39,7 +39,7 @@ Subsection 1.1.1 Title
 Section 1.2 Title
 -----------------
 
-```python
+```javascript
 else:
     DATABASES = {
         'default': {
