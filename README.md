@@ -34,18 +34,21 @@ Django_app is a simple django application created for learning purposes. It feat
 
 2 Installation
 ===============
+
+
 dsdas
 
 Section 1.1 Title
 -----------------
 
-Subsection 2.1.1 Title
+nesto
+
+Subsection 1.1.1 Title
 ~~~~~~~~~~~~~~~~~~~~~~
 fedfdsfsd
 
 
-
-Section 3 Title
+2
 ===============
 
 
