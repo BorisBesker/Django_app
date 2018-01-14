@@ -10,7 +10,7 @@ Contents
 <a name="features-content">[Features](#features)</a>
 
 
-<a name="team-members">[1 Features](#features-content)</a>
+<a name="team-members">[*1 Features](#features-content)</a>
 ===============
 
 * For Django 1.11
