@@ -12,7 +12,7 @@ Django_app is a simple django application created for learning purposes. It feat
 <a name="features-content">[Features](#features)</a>
 
 
-<a name="team-members">[Features](#features-content)</a>
+<a name="team-members">[1 Features](#features-content)</a>
 ---------
 
 * For Django 1.11
@@ -32,17 +32,17 @@ Django_app is a simple django application created for learning purposes. It feat
 
 
 
-Section 1.1 Title
+Section 2.1 Title
 -----------------
 dsdas
 
-Subsection 1.1.1 Title
+Subsection 2.1.1 Title
 ~~~~~~~~~~~~~~~~~~~~~~
 fedfdsfsd
 
 
 
-Section 1.2 Title
+Section 3.1 Title
 -----------------
 
 
