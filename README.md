@@ -75,9 +75,9 @@ Subsection 3.1.1 Title
 
 
 21312312312312Subsection 1.1.1 Title
-~~~~~~~~~~~~~~~~~~~~~~
+~
 
-Chapter 2 Title
-===============
+Subsection 3.2.1 Title
+~~~~~~~~~~~~~~~~~~~~~~
 
 
