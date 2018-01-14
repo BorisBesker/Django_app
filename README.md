@@ -13,7 +13,7 @@ Django_app is a simple django application created for learning purposes. It feat
 
 
 <a name="team-members">[1 Features](#features-content)</a>
----------
+===============
 
 * For Django 1.11
 * Works with Python 2.7 or 3.5
@@ -32,9 +32,12 @@ Django_app is a simple django application created for learning purposes. It feat
 
 
 
-Section 2.1 Title
------------------
+2 Installation
+===============
 dsdas
+
+Section 1.1 Title
+-----------------
 
 Subsection 2.1.1 Title
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -42,9 +45,8 @@ fedfdsfsd
 
 
 
-Section 3.1 Title
------------------
-
+Section 3 Title
+===============
 
 
 
