@@ -7,7 +7,7 @@ Django_app is a simple django application created for learning purposes. It feat
 
 Contents
 
-* <a name="features-content">1  [Main features](#features)</a>
+* <a name="features-content">[1   Main features](#features)</a>
 * <a name="installation-content">[1  Main features](#installation)</a>
 
 
