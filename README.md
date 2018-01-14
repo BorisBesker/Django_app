@@ -30,11 +30,7 @@ Django_app is a simple django application created for learning purposes. It feat
 * Integration and unit tests
 * Code quality up to 9/10 using Django-pylint
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
+
 
 Section 1.1 Title
 -----------------
@@ -46,8 +42,14 @@ Section 1.2 Title
 -----------------
 
 ```python
-// else:
-```
+mystery_int = 50
+sum1 = 0
 
+for i in range(2, mystery_int):
+    if i % 2 != 0:
+        sum1 += i
+print(sum1 + 1)
+
+```
 
 
