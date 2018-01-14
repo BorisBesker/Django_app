@@ -39,4 +39,19 @@ Subsection 1.1.1 Title
 Section 1.2 Title
 -----------------
 
+```python
+
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'mysite_db',
+            'USER': 'boris',
+            'PASSWORD': '',
+            'HOST': 'localhost',  # Or an IP Address that your DB is hosted on
+            'PORT': '3306',
+        }
+    }
+```
+
 
