@@ -87,12 +87,6 @@ class Register(View):
         return render(request, self.template_name, {'form': form})
 
 
-class Welcome(LoginRequiredMixin, TemplateView):
-
-    login_url = '/accounts/login/'
-    template_name = 'google_maps/welcome.html'
-
-
 class Logout(LoginRequiredMixin, View):
 
     login_url = '/accounts/login/'
