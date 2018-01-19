@@ -66,10 +66,14 @@ Right there, you will find the *requirements.txt* file that has all requirement 
 -----------------
 Before application usage you need to compile your Sass to CSS using the sass command. 
 Navigate to python package where the main.scss is located 
+
 `cd accounts/static/accounts/sass.scss`
  Execute the command
+ 
 `sass main.scss main.css`
+
  You can also tell Sass to watch the file and update the CSS every time the Sass file changes:
+ 
 `sass --watch main.scss:main.css`
 
 
