@@ -71,6 +71,23 @@ Go to <http://www.miniwebtool.com/django-secret-key-generator/>, create your sec
 SECRET_KEY = 'YOUR SECRET KEY THERE'
 ```
 
+#### Initialize the database
+In your settings files; `projectname/settings.py` the default database settings is set to sqlite3. 
+
+```python
+  DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': 'my_database',
+        }
+    }
+```
+
+
+If you want to use an another database set the database engine (PostgreSQL, MySQL, etc..). Of course, remember to install necessary database driver for your engine. Then define your credentials as well. Time to finish it up:
+
+`./manage.py migrate`
+
 Section 1.1 Title
 -----------------
 
