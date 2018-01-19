@@ -100,15 +100,16 @@ In your settings files; `projectname/settings.py` the default database settings 
         }
     }
 ```
+If you want to use an another database set the database engine (PostgreSQL, MySQL, etc..). Of course, remember to install necessary database driver for your engine. Then define your credentials as well. Time to finish it up:
+
+`./manage.py migrate`
 
 ### Ready? Go!
 
 `./manage.py runserver`
 
 
-If you want to use an another database set the database engine (PostgreSQL, MySQL, etc..). Of course, remember to install necessary database driver for your engine. Then define your credentials as well. Time to finish it up:
 
-`./manage.py migrate`
 
 Section 1.1 Title
 -----------------
