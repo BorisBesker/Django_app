@@ -12,7 +12,8 @@ Table of Contents
     * <a name="prerequisites-content">[2.1 Prerequisites](#prerequisites)</a>
     * <a name="download-content">[2.2 Download](#download)</a>
     * <a name="requirements-content">[2.3 Requirements](#requirements)</a>
-    * <a name="tweaks-content">[2.4 Tweaks](#tweaks)</a>
+    * <a name="sass-content">[2.5 Compile SASS](#sass)</a>
+    * <a name="tweaks-content">[2.5 Tweaks](#tweaks)</a>
 
 
 
@@ -60,7 +61,18 @@ Right there, you will find the *requirements.txt* file that has all requirement 
 
 `$ pip install -r requirements.txt`
 
-<a name="tweaks">[2.4 Tweaks](#tweaks-content)</a>
+
+<a name="sass">[2.4 Compile SASS](#tweaks-sass)</a>
+-----------------
+Before application usage you need to compile your Sass to CSS using the sass command. 
+*Navigate to python package where the main.scss is located 
+cd accounts/static/accounts/sass.scss
+* Execute the command
+sass main.scss main.css
+* You can also tell Sass to watch the file and update the CSS every time the Sass file changes:
+
+
+<a name="tweaks">[2.5 Tweaks](#tweaks-content)</a>
 -----------------
 
 #### SECRET_KEY
