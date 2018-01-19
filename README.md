@@ -9,8 +9,8 @@ Table of Contents
 
 * <a name="features-content">[1 Main features](#features)</a>
 * <a name="installation-content">[2  Installation](#installation)</a>
-    * [2.1 Prerequisites](#stdin)
-    * [Local files](#local-files
+    * <a name="prerequisites-content">[2.1 Prerequisites](#prerequisites)</a>
+   
 
 
 
@@ -34,23 +34,20 @@ Table of Contents
 
 
 
-<a name="Installation">[1  Installation](#installation-content)</a>
+<a name="installation">[2  Installation](#installation-content)</a>
 ===============
 
+<a name="prerequisites">[2.1 Prerequisites](#prerequisites-content)</a>
+-----------------
+- Python >= 2.7
+- pip
+- virtualenv (virtualenvwrapper is recommended
 
 
-dsdas
+
 
 Section 1.1 Title
 -----------------
-
-nesto
-sadasdasd 
-dsa das
-das 
-asd
-as
-d
 
 
 
