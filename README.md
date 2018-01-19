@@ -65,11 +65,11 @@ Right there, you will find the *requirements.txt* file that has all requirement 
 <a name="sass">[2.4 Compile SASS](#tweaks-sass)</a>
 -----------------
 Before application usage you need to compile your Sass to CSS using the sass command. 
-*Navigate to python package where the main.scss is located 
+Navigate to python package where the main.scss is located 
 cd accounts/static/accounts/sass.scss
-* Execute the command
+ Execute the command
 sass main.scss main.css
-* You can also tell Sass to watch the file and update the CSS every time the Sass file changes:
+ You can also tell Sass to watch the file and update the CSS every time the Sass file changes:
 
 
 <a name="tweaks">[2.5 Tweaks](#tweaks-content)</a>
