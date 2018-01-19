@@ -39,9 +39,8 @@ Table of Contents
 
 <a name="prerequisites">[2.1 Prerequisites](#prerequisites-content)</a>
 -----------------
-- Python >= 2.7
-- pip
-- virtualenv (virtualenvwrapper is recommended
+- Python 2.7 or 3.5 https://www.python.org/downloads/
+- virtualenv (virtualenvwrapper is recommended 
 
 
 
