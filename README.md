@@ -10,7 +10,7 @@ Table of Contents
 * <a name="features-content">[1 Main features](#features)</a>
 * <a name="installation-content">[2  Installation](#installation)</a>
     * <a name="prerequisites-content">[2.1 Prerequisites](#prerequisites)</a>
-   
+    * <a name="download-content">[2.2 Prerequisites](#download)</a>
 
 
 
@@ -40,9 +40,14 @@ Table of Contents
 <a name="prerequisites">[2.1 Prerequisites](#prerequisites-content)</a>
 -----------------
 - Python 2.7 or 3.5 https://www.python.org/downloads/
-- virtualenv (virtualenvwrapper is recommended 
+- SASS http://sass-lang.com/install 
 
+<a name="download">[2.2 Download](#download-content)</a>
+-----------------
+Now, you need the *django-sample-app* project files in your workspace:
 
+    $ cd /path/to/your/workspace
+    $ git clone git://github.com/kirpit/django-sample-app.git projectname && cd projectname
 
 
 Section 1.1 Title
