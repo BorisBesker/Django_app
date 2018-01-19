@@ -10,7 +10,8 @@ Table of Contents
 * <a name="features-content">[1 Main features](#features)</a>
 * <a name="installation-content">[2  Installation](#installation)</a>
     * <a name="prerequisites-content">[2.1 Prerequisites](#prerequisites)</a>
-    * <a name="download-content">[2.2 Prerequisites](#download)</a>
+    * <a name="download-content">[2.2 Download](#download)</a>
+    * <a name="requirements-content">[2.3 Requirements](#requirements)</a>
 
 
 
@@ -42,12 +43,20 @@ Table of Contents
 - Python 2.7 or 3.5 https://www.python.org/downloads/
 - SASS http://sass-lang.com/install 
 
+
 <a name="download">[2.2 Download](#download-content)</a>
 -----------------
 Now, you need the *django-sample-app* project files in your workspace:
 
     $ cd /path/to/your/workspace
-    $ git clone git://github.com/kirpit/django-sample-app.git projectname && cd projectname
+    $ git clone https://github.com/BorisBesker/django_app.git projectname && cd projectname
+
+
+<a name="requirements">[2.3 Requirements](#requirements-content)</a>
+-----------------
+Right there, you will find the *requirements.txt* file that has all requirement packages, django helpers and some other cool stuff. To install them, simply type:
+
+`$ pip install -r requirements.txt`
 
 
 Section 1.1 Title
