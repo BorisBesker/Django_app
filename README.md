@@ -12,6 +12,8 @@ Table of Contents
     * <a name="prerequisites-content">[2.1 Prerequisites](#prerequisites)</a>
     * <a name="download-content">[2.2 Download](#download)</a>
     * <a name="requirements-content">[2.3 Requirements](#requirements)</a>
+    * <a name="tweaks-content">[2.4 Tweaks](#tweaks)</a>
+
 
 
 
@@ -58,6 +60,16 @@ Right there, you will find the *requirements.txt* file that has all requirement 
 
 `$ pip install -r requirements.txt`
 
+<a name="tweaks">[2.4 Tweaks](#tweaks-content)</a>
+-----------------
+
+#### SECRET_KEY
+Go to <http://www.miniwebtool.com/django-secret-key-generator/>, create your secret key, copy it. Open your `projectname/settings.py`, find `SECRET_KEY` line, paste your secret key.
+
+```python
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = 'YOUR SECRET KEY THERE'
+```
 
 Section 1.1 Title
 -----------------
