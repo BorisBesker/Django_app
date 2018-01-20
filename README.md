@@ -14,9 +14,9 @@ Table of Contents
     * <a name="requirements-content">[2.3 Requirements](#requirements)</a>
     * <a name="sass-content">[2.4 Compile SASS](#sass)</a>
     * <a name="tweaks-content">[2.5 Tweaks](#tweaks)</a>
-
-
-
+* <a name="usage-content">[3  Usage](#usage)</a>
+* <a name="contributing-content">[4  Contributing](#contributing)</a>
+* <a name="license-content">[5  License](#license)</a>
 
 <a name="features">[1  Main features](#features-content)</a>
 ===============
@@ -108,6 +108,19 @@ If you want to use an another database set the database engine (PostgreSQL, MySQ
 
 `./manage.py runserver`
 
+<a name="usage">[3  Usage](#usage-content)</a>
+===============
+
+
+
+<a name="contributing">[4  Contributing](#usage-content)</a>
+===============
+
+
+<a name="license">[5  License](#license-content)</a>
+===============
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
 
 
 
