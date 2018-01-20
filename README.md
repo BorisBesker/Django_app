@@ -57,9 +57,9 @@ Now, you need the *django-sample-app* project files in your workspace:
 
 <a name="requirements">[2.3 Requirements](#requirements-content)</a>
 -----------------
-**Recomended**: Create virtual enviroment
+**Recommended**: Create virtual environment
 
-      $ pip install --upgrade virtualenv`
+      $ pip install --upgrade virtualenv
       $ virtualenv env
       $ source env/bin/activate
 
@@ -123,7 +123,7 @@ If you want to use an another database set the database engine (PostgreSQL, MySQ
 ===============
 
 1. If you find some bug or have an new idea to implement(feature), or just want to write tests for JS. code.
-2. Fork <a href="https://github.com/BorisBesker/django_app>"the repository</a> on GitHub to start making your changes to the **master** branch (or branch off of it).
+2. Fork <a href="https://github.com/BorisBesker/django_app">the repository</a> on GitHub to start making your changes to the **master** branch (or branch off of it).
 3. Write a test which shows that the bug was fixed or that the feature works as expected.
 4. Send a pull request.
 
