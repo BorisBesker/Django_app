@@ -125,7 +125,7 @@ If you want to use an another database set the database engine (PostgreSQL, MySQ
 <a name="license">[5  License](#license-content)</a>
 ===============
 
-This project is licensed under the MIT License - see the <a href="https://raw.githubusercontent.com/BorisBesker/django_app/391adcb2dda56f11fff8743950d9fd45e4ba6306/LICENSE"<LICENSE.md<a/> file for details
+This project is licensed under the MIT License - see the <a href="https://raw.githubusercontent.com/BorisBesker/django_app/391adcb2dda56f11fff8743950d9fd45e4ba6306/LICENSE">LICENSE.md<a/> file for details
 
 
 
