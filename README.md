@@ -57,9 +57,15 @@ Now, you need the *django-sample-app* project files in your workspace:
 
 <a name="requirements">[2.3 Requirements](#requirements-content)</a>
 -----------------
+**Recomended**: Create virtual enviroment
+
+`$ pip install --upgrade virtualenv`
+`$ virtualenv env`
+`$ source env/bin/activate`
+
 Right there, you will find the *requirements.txt* file that has all requirement packages, django helpers and some other cool stuff. To install them, simply type:
 
-`$ pip install -r requirements.txt`
+`(env) $ pip install -r requirements.txt`
 
 
 <a name="sass">[2.4 Compile SASS](#tweaks-sass)</a>
