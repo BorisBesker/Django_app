@@ -116,16 +116,16 @@ If you want to use an another database set the database engine (PostgreSQL, MySQ
 <a name="contributing">[4  Contributing](#usage-content)</a>
 ===============
 
-*. If you find some bug or have an new idea to implement(feature), or just want to write tests for JS. code.
-*. Fork `the repository`_ on GitHub to start making your changes to the **master** branch (or branch off of it).
-*. Write a test which shows that the bug was fixed or that the feature works as expected.
-*. Send a pull request.
+1. If you find some bug or have an new idea to implement(feature), or just want to write tests for JS. code.
+2. Fork `the repository`_ on GitHub to start making your changes to the **master** branch (or branch off of it).
+3. Write a test which shows that the bug was fixed or that the feature works as expected.
+4. Send a pull request.
 
 
 <a name="license">[5  License](#license-content)</a>
 ===============
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the <a href="https://raw.githubusercontent.com/BorisBesker/django_app/391adcb2dda56f11fff8743950d9fd45e4ba6306/LICENSE"<LICENSE.md<a/> file for details
 
 
 
