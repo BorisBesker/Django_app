@@ -59,9 +59,9 @@ Now, you need the *django-sample-app* project files in your workspace:
 -----------------
 **Recomended**: Create virtual enviroment
 
-`$ pip install --upgrade virtualenv`
-`$ virtualenv env`
-`$ source env/bin/activate`
+      $ pip install --upgrade virtualenv`
+      $ virtualenv env
+      $ source env/bin/activate
 
 Right there, you will find the *requirements.txt* file that has all requirement packages, django helpers and some other cool stuff. To install them, simply type:
 
@@ -123,7 +123,7 @@ If you want to use an another database set the database engine (PostgreSQL, MySQ
 ===============
 
 1. If you find some bug or have an new idea to implement(feature), or just want to write tests for JS. code.
-2. Fork `the repository`_ on GitHub to start making your changes to the **master** branch (or branch off of it).
+2. Fork <a href="https://github.com/BorisBesker/django_app>"the repository</a> on GitHub to start making your changes to the **master** branch (or branch off of it).
 3. Write a test which shows that the bug was fixed or that the feature works as expected.
 4. Send a pull request.
 
