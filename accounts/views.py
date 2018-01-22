@@ -17,7 +17,7 @@ class Login(View):
         """Handles the GET Http request
 
         If user is authenticated performs redirection, if not authenticated returns the associated
-        template
+        templae
 
         :param request:
         :return:
