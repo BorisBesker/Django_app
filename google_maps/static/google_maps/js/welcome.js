@@ -2,13 +2,14 @@ $(document).ready(function() {
 
     //Generates the src of iFrame based on users input
     function generateSrc(mode, options) {
-        var currentParams, params = {};
+        let currentParams = {};
+        let params = {};
         var src_iframe = $("iframe").attr("src");
         var getQueryString = src_iframe.match(/&(.+)/); // Gets querystring after APIkey
         var searchParams = new URLSearchParams(getQueryString[1]);
 
         // Converts querystring into js object for manipulating
-        for (var key of searchParams.keys()) {
+        for (let key of searchParams.keys()) {
             currentParams[key] = searchParams.get(key);
         }
         mode = (mode) ? mode : getCurrentMode();
