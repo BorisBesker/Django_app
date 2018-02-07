@@ -133,7 +133,7 @@ To see the list of saved locations click on button "Saved locations". You can re
 
 <img width="1274" alt="gm" src="https://user-images.githubusercontent.com/26566198/35930601-a570d960-0c32-11e8-9807-723aabb74541.png">
 
-<a name="tests">[3.1 Tests](#tests-content)</a>
+<a name="tests">[3.2 Tests](#tests-content)</a>
 -----------------
 Django_app is covered with unit and integration tests. 
 ### Running tests
@@ -147,14 +147,13 @@ This will discover all files named with the pattern test*.py under the current d
 
 If you want to run a subset of your tests you can do so by specifying the full dot path to the package(s), module, TestCase subclass or method:
 
-`python3 manage.py test accounts.tests`   # Run the specified package tests (django application) 
+`python manage.py test accounts.tests`   # Run the specified package tests (django application) 
 
-`python3 manage.py test accounts.tests.test_integration`  # Run the specified module integration tests
+`python manage.py test accounts.tests.test_integration`  # Run the specified module integration tests
 
-`python3 manage.py test accounts.tests.test_integration.LoginViewTest` # Run the specified class
+`python manage.py test accounts.tests.test_integration.LoginViewTest` # Run the specified class
 
-`python3 manage.py test accounts.tests.test_integration.LoginViewTest.test_login_view_url_exists`  # Run the specified
-
+`python manage.py test accounts.tests.test_integration.LoginViewTest.test_login_view_url_exists`  # Run the specified
 method
 
 
