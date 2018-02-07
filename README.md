@@ -175,7 +175,9 @@ Use coverage report to report on the results:
 `coverage report`
 
 accounts/__init__.py                         0      0   100%
+
 accounts/apps.py                             3      3     0%
+
 accounts/forms.py                           34     10    71%
 accounts/migrations/__init__.py              0      0   100%
 accounts/tests/__init__.py                   0      0   100%
