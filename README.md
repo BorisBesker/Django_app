@@ -125,10 +125,12 @@ If you want to use an another database set the database engine (PostgreSQL, MySQ
 Once the server is up and running, create an account and login into the app. From there you can search for locations or directions.
 <img width="1274" alt="gm" src="https://user-images.githubusercontent.com/26566198/35930530-7291b212-0c32-11e8-9c14-2728cb2e3cc3.png">
 
-
 When searching google maps autocomplete is on to make it easy for you. 
 If you want to save a location click the button "SAVE LOCATION". 
 To see the list of saved locations click on button "Saved locations". You can revesit the saved location clicking on it.
+
+<img width="1274" alt="gm" src="https://user-images.githubusercontent.com/26566198/35930601-a570d960-0c32-11e8-9807-723aabb74541.png">
+
 
 
 <a name="contributing">[4  Contributing](#usage-content)</a>
