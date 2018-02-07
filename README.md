@@ -18,6 +18,7 @@ Table of Contents
 * <a name="usage-content">[3  Usage](#usage)</a>
     * <a name="basicusage-content">[3.1 Basic usage](#basicusage)</a>
     * <a name="tests-content">[3.2 Tests](#tests)</a>
+    * <a name="codecoverage-content">[3.3 Code coverage](#codecoverage)</a>
 
 
 
@@ -156,7 +157,18 @@ If you want to run a subset of your tests you can do so by specifying the full d
 `python manage.py test accounts.tests.test_integration.LoginViewTest.test_login_view_url_exists`  # Run the specified
 method
 
+<a name="codecoverage">[3.3 Code coverage](#codecoverage-content)</a>
+-----------------
 
+Coverage.py is a tool for measuring code coverage of Python programs. It monitors your program, noting which parts of the code have been executed, then analyzes the source to identify code that could have been executed but was not.
+
+Coverage measurement is typically used to gauge the effectiveness of tests. It can show which parts of your code are being exercised by tests, and which are not.
+
+### Running code coverage
+
+To run Coverage.py use the command:
+
+`coverage run --source='.' manage.py test`
 
 <a name="contributing">[4  Contributing](#usage-content)</a>
 ===============
