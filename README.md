@@ -15,7 +15,7 @@ Table of Contents
     * <a name="sass-content">[2.4 Compile SASS](#sass)</a>
     * <a name="tweaks-content">[2.5 Tweaks](#tweaks)</a>
 * <a name="usage-content">[3  Usage](#usage)</a>
-       * <a name="basicusage-content">[3.1 Basic usage](#basicusage)</a>
+    * <a name="basicusage-content">[3.1 Basic usage](#basicusage)</a>
 
 
 * <a name="contributing-content">[4  Contributing](#contributing)</a>
