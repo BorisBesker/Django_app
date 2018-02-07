@@ -174,38 +174,6 @@ Use coverage report to report on the results:
 
 `coverage report`
 
-accounts/__init__.py                         0      0   100%
-
-accounts/apps.py                             3      3     0%
-
-accounts/forms.py                           34     10    71%
-accounts/migrations/__init__.py              0      0   100%
-accounts/tests/__init__.py                   0      0   100%
-accounts/tests/factories.py                  6      0   100%
-accounts/tests/mixins.py                     5      0   100%
-accounts/tests/test_integration.py          82     27    67%
-accounts/tests/test_unit.py                 42     18    57%
-accounts/urls.py                             4      0   100%
-accounts/views.py                           43     19    56%
-django_app/__init__.py                       0      0   100%
-django_app/settings.py                      21     21     0%
-django_app/settings_private.py              19      0   100%
-django_app/urls.py                           8      4    50%
-django_app/wsgi.py                           4      4     0%
-google_maps/__init__.py                      0      0   100%
-google_maps/admin.py                         4      0   100%
-google_maps/apps.py                          3      3     0%
-google_maps/migrations/0001_initial.py       9      0   100%
-google_maps/migrations/__init__.py           0      0   100%
-google_maps/models.py                       12      4    67%
-google_maps/tests/__init__.py                0      0   100%
-google_maps/tests/test_integration.py       50     25    50%
-google_maps/tests/test_unit.py              17      0   100%
-google_maps/urls.py                          4      0   100%
-google_maps/views.py                        25      8    68%
-manage.py                                   13      6    54%
-------------------------------------------------------------
-TOTAL                                      408    152    63%
 
 
 <a name="contributing">[4  Contributing](#usage-content)</a>
