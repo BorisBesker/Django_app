@@ -121,7 +121,10 @@ If you want to use an another database set the database engine (PostgreSQL, MySQ
 ===============
 <a name="basicusage">[3.1 Basic usage](#basicusage-content)</a>
 -----------------
-Once the server is up and running, create an account and login into the app. From there you can search for locations or directions. When searching google maps autocomplete is on to make it easy for you. If you want to save a location click the button "SAVE LOCATION". To se the list of saved locations click on button
+Once the server is up and running, create an account and login into the app. From there you can search for locations or directions. 
+When searching google maps autocomplete is on to make it easy for you. 
+If you want to save a location click the button "SAVE LOCATION". 
+To see the list of saved locations click on button "Saved locations". You can revesit the saved location clicking on it.
 
 
 <a name="contributing">[4  Contributing](#usage-content)</a>
