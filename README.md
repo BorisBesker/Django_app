@@ -17,6 +17,8 @@ Table of Contents
     * <a name="tweaks-content">[2.5 Tweaks](#tweaks)</a>
 * <a name="usage-content">[3  Usage](#usage)</a>
     * <a name="basicusage-content">[3.1 Basic usage](#basicusage)</a>
+    * <a name="tests-content">[3.2 Tests](#tests)</a>
+
 
 
 * <a name="contributing-content">[4  Contributing](#contributing)</a>
@@ -131,6 +133,10 @@ To see the list of saved locations click on button "Saved locations". You can re
 
 <img width="1274" alt="gm" src="https://user-images.githubusercontent.com/26566198/35930601-a570d960-0c32-11e8-9807-723aabb74541.png">
 
+<a name="tests">[3.1 Tests](#tests-content)</a>
+-----------------
+Django_app is covered with unit and integration tests. 
+### Running tests
 
 
 <a name="contributing">[4  Contributing](#usage-content)</a>
