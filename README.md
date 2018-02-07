@@ -148,9 +148,13 @@ This will discover all files named with the pattern test*.py under the current d
 If you want to run a subset of your tests you can do so by specifying the full dot path to the package(s), module, TestCase subclass or method:
 
 `python3 manage.py test catalog.tests`   # Run the specified module
+
 `python3 manage.py test catalog.tests.test_models`  # Run the specified module
+
 `python3 manage.py test catalog.tests.test_models.YourTestClass` # Run the specified class
+
 `python3 manage.py test catalog.tests.test_models.YourTestClass.test_one_plus_one_equals_two`  # Run the specified method
+
 
 
 <a name="contributing">[4  Contributing](#usage-content)</a>
