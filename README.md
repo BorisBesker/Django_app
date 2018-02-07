@@ -2,7 +2,8 @@ django_app
 ===============
 Django_app is a simple django application created for learning purposes. It features the user to search/save a location/direction on Google Maps Embeded API.
 
-<img width="1274" alt="gm" src="https://user-images.githubusercontent.com/26566198/34909233-76444f3a-f89d-11e7-8181-0b880e31bbe3.png">
+<img width="1274" alt="gm" src="https://user-images.githubusercontent.com/26566198/35930619-b2b2eadc-0c32-11e8-99e3-1cbf1c7136f5.png">
+
 
 Table of Contents
 =================
