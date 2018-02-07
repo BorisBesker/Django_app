@@ -15,6 +15,9 @@ Table of Contents
     * <a name="sass-content">[2.4 Compile SASS](#sass)</a>
     * <a name="tweaks-content">[2.5 Tweaks](#tweaks)</a>
 * <a name="usage-content">[3  Usage](#usage)</a>
+       * <a name="basicusage-content">[3.1 Basic usage](#basicusage)</a>
+
+
 * <a name="contributing-content">[4  Contributing](#contributing)</a>
 * <a name="license-content">[5  License](#license)</a>
 
@@ -116,6 +119,7 @@ If you want to use an another database set the database engine (PostgreSQL, MySQ
 
 <a name="usage">[3  Usage](#usage-content)</a>
 ===============
+<a name="basicusage">[3.1 Basic usage](#basicusage-content)</a>
 
 
 
