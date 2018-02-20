@@ -194,22 +194,6 @@ This project is licensed under the MIT License - see the <a href="https://raw.gi
 
 
 
-```python
-mystery_int = 50
-sum1 = 0
-
-for i in range(2, mystery_int):
-    if i % 2 != 0:
-        sum1 += i
-print(sum1 + 1)
-
-```
-
-
-
-21312312312312Subsection 1.1.1 Title
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 
 
